@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	Enter a no <input type="text" id="wr">
+	<br>
+	<p  id="y"></p>
+	<button onclick="myfunc()">check</button>
+	<script>
+		function myfunc(){
+			var x= Number(document.getElementById("wr").value);
+
+			var n1=0;
+			var n2=1;
+			var n3;
+		
+			 var text="fibonacci series  of given no is: ";
+
+			 for (var i=0 ;i<x; i++){
+			 		text+=n1 +"   ";        //0        1  1  2  3
+			 	
+			 	n3=n1+n2;                     //n3 1   2  3   5
+			 	n1=n2;                        //n1 1   1  2   3
+			 	n2=n3;                        //n2 1   2  3   5
+			 
+			 }
+
+			document.getElementById("y").innerHTML=text; 
+		}
+		
+	</script>
+</body>
+</html>
+
